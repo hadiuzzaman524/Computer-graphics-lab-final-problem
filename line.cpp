@@ -18,8 +18,6 @@ int dy=abs(y2-y1);
 float x=x1; 
 float y=y1; 
 
-
-
 int step=0; 
 dx>dy?step=dx:step=dy;  
 
@@ -27,10 +25,10 @@ float xinc= dx/(float)step;
 float yinc= dy/(float)step; 
 
 putpixel(x,y,'WHITE');
+
 while(step--){
 	x+= xinc; 
 	y+=yinc; 
-    
 	putpixel(abs(x), abs(y), 'WHITE');
 }
 getch(); 
