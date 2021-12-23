@@ -6,6 +6,7 @@ int main(){
 	
 int gd= DETECT, gm; 
 initgraph(&gd, &gm, ""); 
+/*
 int x1,y1, x2, y2; 
 cout<< "Enter first point: "; 
 cin>>x1>>y1; 
@@ -30,7 +31,13 @@ while(step--){
 	x+= xinc; 
 	y+=yinc; 
 	putpixel(abs(x), abs(y), 'WHITE');
-}
+}*/
+
+rectangle(150,40,450,180);
+setfillstyle(1,GREEN);
+floodfill(160,50,WHITE);
+setcolor(WHITE);
+
 getch(); 
 closegraph(); 
 
